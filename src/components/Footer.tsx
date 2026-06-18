@@ -1,16 +1,15 @@
-import { Link } from "react-router-dom"
-import { ExternalLink, MessageSquare, Code2 } from "lucide-react"
+import { Link } from "react-router-dom";
+import { ExternalLink, MessageSquare, Code2 } from "lucide-react";
 
 const footerLinks = [
-  { label: "Services", href: "/#services", isAnchor: true },
+  { label: "Services", href: "/services", isAnchor: false },
   { label: "Projects", href: "/projects", isAnchor: false },
   { label: "About", href: "/about", isAnchor: false },
-  { label: "Process", href: "/#process", isAnchor: true },
-  { label: "Contact", href: "/#contact", isAnchor: true },
-]
+  { label: "Contact", href: "/contact", isAnchor: false },
+];
 
 export function Footer() {
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-[#1a2517] border-t border-[#acc8a2]/10">
@@ -20,7 +19,7 @@ export function Footer() {
           <div className="flex items-center gap-3">
             <Link to="/">
               <img
-                src="/Vextor_Labs_Logo_2.png"
+                src="/logo_01.png"
                 alt="Vextor Labs"
                 className="h-8 w-auto hover:opacity-80 transition-opacity"
               />
@@ -49,7 +48,7 @@ export function Footer() {
                 >
                   {item.label}
                 </Link>
-              )
+              ),
             )}
           </div>
 
@@ -73,5 +72,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

@@ -4,6 +4,14 @@ import { Button } from "@/components/ui/button";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-[#0d1610]">
+      <img
+        src="/logo_01.png"
+        alt="Vextor Labs"
+        className="absolute left-1/2 -translate-x-1/2 opacity-45"
+      />
+
+      <div className="absolute inset-0 bg-linear-to-t from-[#1a2517] from-80% to-transparent opacity-50 pointer-events-none" />
+
       {/* Grid pattern background */}
       <div className="absolute inset-0 grid-bg opacity-60" />
 
@@ -83,23 +91,6 @@ export function Hero() {
             >
               <a href="#services">Explore Services</a>
             </Button>
-          </div>
-
-          {/* Stats */}
-          <div
-            className="animate-slide-up opacity-0 mt-16 flex flex-wrap gap-10 delay-400"
-            style={{ animationFillMode: "forwards" }}
-          >
-            {[
-              { value: "50+", label: "Projects Delivered" },
-              { value: "10+", label: "Years Combined XP" },
-              { value: "99%", label: "Client Satisfaction" },
-            ].map(({ value, label }) => (
-              <div key={label}>
-                <p className="text-3xl font-black text-white">{value}</p>
-                <p className="text-sm text-[#8aab82] mt-1">{label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

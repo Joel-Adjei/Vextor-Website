@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useReveal } from "@/hooks/use-reveal"
 
-const services = [
+export const services = [
   {
     icon: Globe,
     title: "Web Application Development",

@@ -17,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { useReveal } from "@/hooks/use-reveal";
+import logoText from "@/assets/text_logo.png";
 
 const team = [
   {
@@ -145,6 +146,13 @@ export function AboutPage() {
 
   return (
     <div className="min-h-screen bg-background" ref={ref}>
+      {/* <section className="pt-36">
+        <div className="w-full mx-auto">
+          <img src={"/logo"} alt="Vextor Labs" className="w-120 mx-auto" />
+          <img src={logoText} alt="Vextor Labs" className="w-120 mx-auto" />
+        </div>
+      </section> */}
+
       {/* Hero */}
       <section className="relative bg-[#0d1610] pt-36 pb-24 overflow-hidden">
         <div className="absolute inset-0 grid-bg opacity-40 pointer-events-none" />
