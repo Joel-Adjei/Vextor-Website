@@ -1,13 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
-import {
-  ArrowRight,
-  CheckCircle2,
-  Clock3,
-  Mail,
-  MapPin,
-  MessageSquare,
-  Phone,
-} from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
