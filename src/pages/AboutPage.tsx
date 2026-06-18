@@ -17,7 +17,6 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { useReveal } from "@/hooks/use-reveal";
-import logoText from "@/assets/text_logo.png";
 
 const team = [
   {
