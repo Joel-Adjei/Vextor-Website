@@ -1,36 +1,44 @@
 import {
-  Atom,
   Database,
   Cloud,
-  Layers,
   Server,
-  Terminal,
-  Code2,
-  GitBranch,
-  Box,
-  Cpu,
   Zap,
-  Globe,
   Network,
   Lock,
   BarChart3,
-  Workflow,
 } from "lucide-react";
 
+import {
+  SiTypescript,
+  SiRust,
+  SiGo,
+  SiPostgresql,
+  SiKubernetes,
+  SiReact,
+  SiPython,
+  SiCloudflare,
+  SiTerraform,
+  SiGraphql,
+  SiDocker,
+  SiNextdotjs,
+} from "react-icons/si";
+
 const techs = [
-  { name: "React", Icon: Atom },
-  { name: "PostgreSQL", Icon: Database },
-  { name: "Kubernetes", Icon: Layers },
+  { name: "React", Icon: SiReact },
+  { name: "TypeScript", Icon: SiTypescript },
+  { name: "PostgreSQL", Icon: SiPostgresql },
+  { name: "Kubernetes", Icon: SiKubernetes },
   { name: "Node.js", Icon: Server },
-  { name: "Python", Icon: Terminal },
-  { name: "TypeScript", Icon: Code2 },
+  { name: "Python", Icon: SiPython },
   { name: "AWS", Icon: Cloud },
-  { name: "Terraform", Icon: Workflow },
-  { name: "GraphQL", Icon: GitBranch },
-  { name: "Docker", Icon: Box },
+  { name: "Cloudflare", Icon: SiCloudflare },
+  { name: "Terraform", Icon: SiTerraform },
+  { name: "GraphQL", Icon: SiGraphql },
+  { name: "Docker", Icon: SiDocker },
   { name: "Redis", Icon: Zap },
-  { name: "Next.js", Icon: Globe },
-  { name: "Go", Icon: Cpu },
+  { name: "Next.js", Icon: SiNextdotjs },
+  { name: "Go", Icon: SiGo },
+  { name: "Rust", Icon: SiRust },
   { name: "MongoDB", Icon: Database },
   { name: "Kafka", Icon: Network },
   { name: "Security", Icon: Lock },
@@ -50,12 +58,12 @@ export function TechTicker() {
       <div className="ticker-track flex gap-12 items-center w-max">
         {doubled.map((tech, i) => (
           <div key={i} className="flex items-center gap-3 shrink-0 group">
-            <div className="w-6 h-6 flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity">
-              <tech.Icon className="w-7 h-7 lg:w-66 lg:h-66 text-[#acc8a2]" />
+            <div className="w-15 h-15 flex items-center justify-center opacity-70 group-hover:opacity-100 transition-opacity">
+              <tech.Icon className="w-30 h-30 lg:w-66 lg:h-66 text-[#acc8a2]" />
             </div>
-            <span className="text-lg font-bold tracking-[0.15em] uppercase text-[#acc8a2]/70 group-hover:text-[#acc8a2] transition-colors whitespace-nowrap">
+            {/* <span className="text-lg font-bold tracking-[0.15em] uppercase text-[#acc8a2]/70 group-hover:text-[#acc8a2] transition-colors whitespace-nowrap">
               {tech.name}
-            </span>
+            </span> */}
             <span className="text-[#acc8a2]/25 text-xs ml-6">•</span>
           </div>
         ))}
