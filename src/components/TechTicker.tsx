@@ -1,20 +1,11 @@
 import {
-  Atom,
   Database,
   Cloud,
-  Layers,
   Server,
-  Terminal,
-  Code2,
-  GitBranch,
-  Box,
-  Cpu,
   Zap,
-  Globe,
   Network,
   Lock,
   BarChart3,
-  Workflow,
 } from "lucide-react";
 
 import {
